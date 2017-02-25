@@ -1,5 +1,5 @@
 import  re
-content = "电话号码:15555245698 QQ:1524252226 邮箱：555dd-s@qq.com 固定电话:0931-8525555 短号码：555555"
+content = "电话号码:15555245698 qwertyuiopQQ:1524252226 邮箱：555dd-s@qq.com 固定电话:0931-8525555 短号码：555555"
 infos = set()
 results = re.findall(r"\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}|1[3|4|5|7|8]\d{9}|\d{5,10}|0\d{2,3}-\d{5,9}\b",content)
 for result in results:
